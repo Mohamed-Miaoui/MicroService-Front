@@ -1,0 +1,14 @@
+<p>update-room works!</p>
+<form #f ="ngForm" (submit)="updateroom()">
+<label class="formbold-form-label" >
+    name
+</label>
+<input class="formbold-form-input"   name="roomname" type="text"
+       [(ngModel)]="room.nameRoom" #chambreName="ngModel" />
+<!--need to set user and local date  auto-->
+<label class="formbold-form-label" >
+    limite mumber
+</label>
+<input class="formbold-form-input"   name="rommenumber" type="number"
+       [(ngModel)]="room.NBRMember" #chambreName="ngModel" />
+</form>

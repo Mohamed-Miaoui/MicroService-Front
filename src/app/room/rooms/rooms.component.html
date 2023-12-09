@@ -1,0 +1,8 @@
+<p>rooms works!</p>
+
+<tr  *ngFor="let u of rooms">
+  <td>{{u.nameRoom}}***{{u.NBRMember}}</td>
+    <boutton [routerLink]="['../addroom']">add</boutton>
+<button [routerLink]="['../editroom', u.numAbon]"> update  </button>
+<button  (click)="deleatRoom(u.numAbon)">deleat</button>
+</tr>

@@ -1,0 +1,19 @@
+<!-- affichenotif.component.html -->
+
+<div *ngIf="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast" style="position: absolute; top: 0; right: 0;">
+        <div class="toast-header">
+        <!-- You can replace the image source and alt text with actual data from your notification -->
+        <img src="..." class="rounded mr-2" alt="...">
+        <strong class="mr-auto">{{ notification.title }}</strong>
+        <!-- Assuming creationDate is a property of your Notification model -->
+        <small>{{ notification.creationDate | date: 'short' }}</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="toast-body">
+        {{ notification.description }}
+    </div>
+</div>
+</div>
